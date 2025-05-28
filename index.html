@@ -1,13 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nothing Here Yet</title>
+    <title>MMA CyberSecurity Temp Landing Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #333;
+        }
+
+        .main-content {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 20px;
+            text-align: center;
+            max-width: 600px;
+            width: 100%;
+        }
+
+        .main-title {
+            font-size: 1.8em;
+            font-weight: normal;
+            margin-bottom: 15px;
+            color: #444;
+        }
+
+        .main-text {
+            background: #f9f9f9;
+            border: 1px solid #eee;
+            border-radius: 5px;
+            padding: 20px;
+            font-size: 1em;
+            line-height: 1.5;
+            color: #666;
+        }
+
+        .content-section {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+            max-width: 600px;
+            width: 100%;
+        }
+
+        .badge-container {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .badge-container iframe {
+            border: none;
+            display: block;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .badge-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 10;
+            background: transparent;
+            text-decoration: none;
+        }
+
+        .badge-container:hover {
+            opacity: 0.8;
+            transition: opacity 0.2s ease;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+
+            .main-content {
+                padding: 20px;
+            }
+
+            .main-title {
+                font-size: 1.5em;
+            }
+        }
+    </style>
 </head>
+
 <body>
+
     <!-- no comment -->
-    <p>Nothing here yet</p>
-    <p>In fact, I might never have a landing page here, I don't know what to do this with this site yet</p>
+    <div class="main-content">
+        <div class="main-title">Nothing here yet</div>
+        <div class="main-text">In fact, I might never have a landing page here, I don't know what to do with this site
+            yet</div>
+    </div>
+
+    <div class="content-section">For the time being, I only have the following stupid iframe</div>
+
+    <div class="badge-container">
+        <iframe src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=4287581"
+            title="TryHackMe Public Profile Badge"></iframe>
+        <a href="https://tryhackme.com/p/mmaIH" target="_blank" rel="noopener" class="badge-overlay"
+            title="View TryHackMe Profile"></a>
+    </div>
+
 </body>
+
 </html>
