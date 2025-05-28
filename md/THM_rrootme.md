@@ -1,4 +1,4 @@
-<img src="https://tryhackme-images.s3.amazonaws.com/room-icons/11d59cb34397e986062eb515f4d32421.png" alt="TryHackMe" width="15%">
+<img src="11d59cb34397e986062eb515f4d32421.png" style="zoom:25%;" />
 
 # RootMe
 
