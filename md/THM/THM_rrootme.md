@@ -94,6 +94,7 @@ Finished
 
 __Q__: What is the hidden directory?
 __A__:
+
 ```
 /panel/
 ```
@@ -272,6 +273,7 @@ $ cat /var/www/user.txt
 
 ```
 ... and get the answer
+
 __A__:
 
 ```
@@ -348,7 +350,7 @@ find / -perm -4000 -type f 2>/dev/null
 /bin/ping
 ```
 
-... who turns out to be privilieged
+... who turns out to be privileged
 
 __A__:
 ```
@@ -404,6 +406,7 @@ cat /root/root.txt
 ```
 
 __Q__: root.txt
+
 __A__: 
 
 ```
