@@ -15,7 +15,7 @@ __Q__: Scan the machine, how many ports are open?
 ```bash
 nmap -p- -sC -sV <target_machine_ip>
 Starting Nmap 7.80 ( https://nmap.org ) at 2025-05-28 16:17 BST
-Nmap scan report for 10.10.205.195
+Nmap scan report for <target_machine_ip>
 Host is up (0.00020s latency).
 Not shown: 65533 closed ports
 PORT   STATE SERVICE VERSION
@@ -108,11 +108,11 @@ __Q__: user.txt
 
 - ___Step 1:___ Go to the server and get unimpressed
 
-![](Screenshot_1.png)
+![](THM_rrootme_Screenshot_1.png)
 
 - ___Step 2:___ Go to <target_machine_ip>/panel/
 
-![](Screenshot_2.png)
+![](THM_rrootme_Screenshot_2.png)
 
 - ___Step 3.1.:___ Go to Reverse Shell Generator to prep webshell
 - ___Step 3.2.:___ prep shelly.php
@@ -239,11 +239,11 @@ __Q__: user.txt
 
 ___Step 3.3.:___ Server does not fancy shelly.php
 
-![](Screenshot_3.png)
+![](THM_rrootme_Screenshot_3.png)
 
 ___Step 3.4.:___ Server is OK with shelly.phtml
 
-![](Screenshot_4.png)
+![](THM_rrootme_Screenshot_4.png)
 
 ___Step 3.5.:___ shelly.phtml now waits at <attack_box_ip>/uploads to be executed
 
