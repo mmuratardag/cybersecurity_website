@@ -1,0 +1,15 @@
+# .gitlab-ci.yml
+# GitLab CI/CD configuration file for deploying a static site to GitLab Pages
+# cybersecurity_website
+
+pages:
+  stage: deploy
+  script:
+    - mkdir .public
+    - cp -r * .public
+    - mv .public public
+  artifacts:
+    paths:
+      - public
+  rules:
+    - if: $CI_COMMIT_BRANCH == "main"

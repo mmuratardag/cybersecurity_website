@@ -1,2 +1,2 @@
-# Repository for the academic website
+# Repository for the cybersecurity website
 https://mmuratardag.github.io/cybersecurity_website
