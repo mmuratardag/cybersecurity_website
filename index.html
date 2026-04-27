@@ -2,13 +2,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.31">
+<meta name="generator" content="quarto-1.9.30">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
 <title>M. Murat Ardag, Ph.D.</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -36,10 +39,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-8ef56b68f8fa1e9d2ba328e99e439f80.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-a8da12e74b29c2e7b17644f84b91567b.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-bb7160830725afa8abeda692f2b24947.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-dc37ba3c1cae6ddf925fd6a821c182b0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -93,10 +96,6 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="https://mmuratardag.github.io/"> 
 <span class="menu-text">Landing Page</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="https://mmuratardag.github.io/portfolio_website/portfolio.html"> 
-<span class="menu-text">Portfolio</span></a>
-  </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
@@ -142,7 +141,7 @@ ul.task-list li input[type="checkbox"] {
 </iframe>
 </div>
 <div id="second-column" class="quarto-layout-cell" style="flex-basis: 75.0%;justify-content: flex-start;">
-<p>I completed <a href="https://www.ironhack.com/de/cybersecurity" target="_blank">IronHack’s Cybersecurity Bootcamp</a>, and am currently studying for certifications. Additionally, I finished the Pre-Security, Cybersecurity 101, Web Fundamentals, Jr Penetration Tester, Web Application Pentesting, Security Engineer, DevSecOps, and Cloud Security tracks on TryHackMe. I am progressing through the Red Teaming track on TryHackMe while also continuing the AI Red Teamer job role path on HackTheBox.</p>
+<p>This journey started at <a href="https://www.ironhack.com/de/cybersecurity" target="_blank">IronHack’s Cybersecurity Bootcamp</a>.</p>
 </div>
 </div>
 </div>
@@ -201,13 +200,14 @@ ul.task-list li input[type="checkbox"] {
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
